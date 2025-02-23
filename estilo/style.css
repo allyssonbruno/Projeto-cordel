@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+
+      --fonte01:Verdana, Geneva, Tahoma, sans-serif;
+      --fonte02: "Passion One", serif;
+      --fonte03: "Sriracha", serif;
+}
+*{
+      padding: 0%;
+      margin: 0%;
+     
+}
+
+html, body{
+      background-color: gray;
+      font-family: var(--fonte01);
+}
+header{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+/*  text-transform: ;posso colocar todas a letras maiusculas e minusculas, conduto font-variant: small-caps; é melhor para site na questão visualização.
+---- a utilização do font-size: 5vw;(vw)é apenas para ataptar o tamanho da fonte, porém essa prática não é o certo ---*/
+header >h1 {
+      font-family: var(--fonte02);
+      font-variant: small-caps;
+      font-size: 5vw;
+    
+}
+
+a{
+      text-decoration: none;
+      color: white;
+}
+
+header a:hover, footer a:hover{
+      text-decoration: underline;
+}
+/*line-height espaçamento das linhas */
+section {
+      padding-left: 30px;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      line-height: 2em;
+      font-family: var(--fonte03);
+      font-size: 2.5vw;
+
+}
+section p{
+      padding-bottom: 2em;
+}
+
+.normal{
+      background-color: white;
+}
+
+
+.imagem{
+ color: white;
+ background-color: rgba(29, 28, 28, 0.685);
+ box-shadow: inset 5px 13px 12px rgba(0, 0, 0, 0.486);
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+
+/* display: inline-block; vai adaptar ao tamnho do texto, ou seja, o bloco*/
+
+.imagem >p {
+      display: inline-block;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.219);
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.651);
+      border-radius: 9px;
+     
+}
+
+#img01{
+      background-image: url('../imagens/background001.jpg');
+      background-position: right center;
+}
+
+#img02{
+      background-image: url('../imagens/background002.jpg');
+}
+
+footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+}
